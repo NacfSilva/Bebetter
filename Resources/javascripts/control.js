@@ -13,8 +13,10 @@ submit.onclick = function() {
     response.id = "response1";
     var sentense = document.createElement("P");
     sentense.id = "sentense";
-
     document.getElementById("outputName").innerText = name;
+    name = name.replace(" my ", " your ");
+    name = name.replace(" my", " your");
+    name = name.replace("my ", "your ");
     question.innerText = "Why do you want " + name + "?";
     question.classList.add("col-12");
     question.classList.add("float-left");
@@ -42,7 +44,10 @@ submit.onclick = function() {
     question1.id = "question2";
     var response1 = document.createElement("INPUT");
     response1.id = "response2";
-
+    document.getElementById("sentense").innerText = "Because I " + name1 + ".";
+    name1 = name1.replace(" my ", " your ");
+    name1 = name1.replace(" my", " your");
+    name1 = name1.replace("my ", "your ");
     question1.innerText = "Alright, that's a start. So, why do you " + name1 + "?";
     question1.classList.add("col-12");
     question1.classList.add("float-left");
@@ -56,7 +61,7 @@ submit.onclick = function() {
     sentense1.classList.add("float-left");
     sentense1.innerText = "The reason why is because I____.";
 
-    document.getElementById("sentense").innerText = "Because I " + name1 + ".";
+    
     document.getElementById("why2").appendChild(question1);
     document.getElementById("ah2").appendChild(sentense1);
 
@@ -72,8 +77,11 @@ submit.onclick = function() {
     question2.id = "question3";
     var response2 = document.createElement("INPUT");
     response2.id = "response3";
-
-    question2.innerText = "Okay than,that's important, but not enough.The reason I'm questing you is because I would like to understand you more, to realise what you pretend in your life. You told me that you" + name2 + ". Why is that?";
+    document.getElementById("sentense1").innerText = "The reason why is because I " + name2 + ".";
+    name2 = name2.replace(" my ", " your ");
+    name2 = name2.replace("my ", "your ");
+    name2 = name2.replace(" my", " your");
+    question2.innerText = "Okay than,that's important, but not enough.The reason I'm questing you is because I would like to understand you more, to realise what you pretend in your life. You told me that you " + name2 + ". Why is that?";
     question2.classList.add("col-12");
     question2.classList.add("float-left");
 
@@ -86,7 +94,7 @@ submit.onclick = function() {
     sentense2.classList.add("float-left");
     sentense2.innerText = "I appreciate your kindness, and I think it's important to understand the reason about this conversation. The real reason why I really want this in my life is____.";
 
-    document.getElementById("sentense1").innerText = "The reason why is because I " + name2 + ".";
+    
     document.getElementById("why3").appendChild(question2);
     document.getElementById("ah3").appendChild(sentense2);
     document.getElementById("ah3").appendChild(response2);
@@ -101,7 +109,10 @@ submit.onclick = function() {
     question3.id = "question4";
     var response3 = document.createElement("INPUT");
     response3.id = "response4";
-
+    document.getElementById("sentense2").innerText = "I appreciate your kindness, and I think it's important to understand the reason about this conversation. The real reason why I really want this in my life is " + name3 + ".";
+    name3 = name3.replace(" my ", " your ");
+    name3 = name3.replace("my ", "your ");
+    name3 = name3.replace(" my", " your");
     question3.innerText = "Very well. However, there must be more. Dont be scared about expressing your feelings. Okey...So, why do you " + name3 + "?";
     question3.classList.add("col-12");
     question3.classList.add("float-left");
@@ -115,7 +126,7 @@ submit.onclick = function() {
     sentense3.classList.add("float-left");
     sentense3.innerText = "Well, It's not easy to put forward my feelings, It's hard! However, I must do it to realise the person i need to be in my life. The reason why is because I____.";
 
-    document.getElementById("sentense2").innerText = "I appreciate your kindness, and I think it's important to understand the reason about this conversation. The real reason why I really want this in my life is " + name3 + ".";
+    
     document.getElementById("why4").appendChild(question3);
     document.getElementById("ah4").appendChild(sentense3);
     document.getElementById("ah4").appendChild(response3);
@@ -130,7 +141,10 @@ submit.onclick = function() {
     question4.id = "question5";
     var response4 = document.createElement("INPUT");
     response4.id = "response5";
-
+    document.getElementById("sentense3").innerText = "Well, It's not easy to put forward my feelings, It's hard! However, I must do it to realise the person i need to be in my life. The reason why is because I " + name4 + ".";
+    name4 = name4.replace(" my ", " your ");
+    name4 = name4.replace(" my", " your");
+    name4 = name4.replace("my ", "your ");
     question4.innerText = "Why?";
     question4.classList.add("col-12");
     question4.classList.add("float-left");
@@ -144,7 +158,7 @@ submit.onclick = function() {
     sentense4.classList.add("float-left");
     sentense4.innerText = "I____.";
 
-    document.getElementById("sentense3").innerText = "Well, It's not easy to put forward my feelings, It's hard! However, I must do it to realise the person i need to be in my life. The reason why is because I " + name4 + ".";
+    
     document.getElementById("why5").appendChild(question4);
     document.getElementById("ah5").appendChild(sentense4);
     document.getElementById("ah5").appendChild(response4);
@@ -159,7 +173,9 @@ submit.onclick = function() {
     question5.id = "question6";
     var response5 = document.createElement("INPUT");
     response5.id = "response6";
-
+    name5 = name5.replace(" my ", " your ");
+    name5 = name5.replace("my ", "your ");
+    name5 = name5.replace(" my", " your");
     question5.innerText = "That's it? You can do better!";
     question5.classList.add("col-12");
     question5.classList.add("float-left");
@@ -188,7 +204,10 @@ submit.onclick = function() {
     question6.id = "question7";
     var response6 = document.createElement("INPUT");
     response6.id = "response7";
-
+    document.getElementById("sentense5").innerText = "No, That's not it. I " + name6 + ".";
+    name6 = name6.replace(" my ", " your ");
+    name6 = name6.replace(" my", " your");
+    name6 = name6.replace("my ", "your ");
     question6.innerText = "Alright, We are almost done. Last but not least... why do you " + name6 + "?";
     question6.classList.add("col-12");
     question6.classList.add("float-left");
@@ -202,7 +221,7 @@ submit.onclick = function() {
     sentense6.classList.add("float-left");
     sentense6.innerText = "Because I____.";
 
-    document.getElementById("sentense5").innerText = "No, That's not it. I " + name6 + ".";
+   
     document.getElementById("why7").appendChild(question6);
     document.getElementById("ah7").appendChild(sentense6);
     document.getElementById("ah7").appendChild(response6);
@@ -212,6 +231,10 @@ submit.onclick = function() {
     var name7 = document.getElementById("response7").value;
     name7.id = "name7";
     document.getElementById("sentense6").innerText = "Because I " + name7 + ".";
+
+    name7 = name7.replace(" my ", " your ");
+    name7 = name7.replace("my ", "your ");
+    name7 = name7.replace(" my", " your");
     document.getElementById("final").innerText = "Let me tell you something, " + name7 + ", is your purpose in life! If you want it so badly, do it! Don't let people to underestimate you don't let people decide your future. You are the one who knows better! Do it! Without fear. Do it before it's too Late. Thank you for this conversation!";
     document.getElementById("final").classList.add("text-grey");
     document.getElementById("final").classList.add("d-flex");
