@@ -133,7 +133,7 @@ h5 {
 
 .logo {
   width: auto;
-  height: 80px;
+  max-height: 80px;
 }
 
 .logofooter {

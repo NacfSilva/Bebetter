@@ -135,7 +135,7 @@ h5 {
 .logo {
   margin-top: 60%;
   width: auto;
-  height: 100px;
+  max-height: 100px;
 }
 
 .logofooter {
