@@ -142,7 +142,9 @@ h5 {
   width: auto;
   height: 40px;
 }
-
+.text-dropdown{
+  font-size: 0.9em;
+}
 /* svg vero icon*/
 
 .vero-icon {
@@ -237,6 +239,9 @@ footer1 {
   .work {
     left: 42.5%;
   }
+  .text-dropdown{
+    font-size: 0.6em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -245,6 +250,9 @@ footer1 {
   }
   .imgshake {
     left: 45%;
+  }
+  .text-dropdown{
+    font-size: 0.4em;
   }
 }
 
