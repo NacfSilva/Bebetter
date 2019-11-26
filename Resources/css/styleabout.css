@@ -188,7 +188,7 @@ h5 {
   fill: white;
 }
 
-footer1 {
+.footer1 {
   position: fixed;
   right: 0;
   left: 0;
@@ -244,4 +244,22 @@ footer1 {
   .imgshake {
     left: 45%;
   }
+  .text-dark {
+
+    font-size: 10px;
+  
+  }
+  .logo {
+    margin-top: 5%;
+    width: auto;
+    max-height: 55px;
+    margin-right: 120%;
+  }
+  .NunoSilva{
+    font-size: 10px;
+
+}
+
+  .about1{
+    font-size: 10px;
 }
