@@ -1,10 +1,28 @@
 var submit = document.getElementById("submit");
 var clear = document.getElementById("clear");
+var continue1 = document.getElementById("Continue");
 var i = 0;
+var j =0;
 
+continue1.onclick = function(){
+  if (j == 0){
+    j++
+    var hide1 = document.getElementById("question");
+    var hide2 = document.getElementById("input-response");
+    var hide3 = document.getElementById("instrution");
+
+    clear.classList.remove("hidden");
+    submit.classList.remove("hidden");
+    hide1.classList.remove("hidden");
+    hide2.classList.remove("hidden");
+
+    hide3.classList.add("hidden");
+
+  }
+};
 submit.onclick = function() {
   i++;
-
+  if (j != 0) {
   if (i == 1) {
     var name = document.getElementById("name").value;
     var question = document.createElement("LABEL");
@@ -21,12 +39,14 @@ submit.onclick = function() {
     question.classList.add("col-12");
     question.classList.add("float-left");
 
-    response.classList.add("col-8");
+    response.classList.add("col-12");
+    response.classList.add("col-md-8");
     response.classList.add("float-left");
     response.setAttribute("type", "text");
 
     sentense.classList.add("text-color2");
-    sentense.classList.add("col-4");
+    sentense.classList.add("col-12");
+    sentense.classList.add("col-md-4");
     sentense.classList.add("float-left");
     sentense.innerText = "Because I____.";
 
@@ -52,12 +72,14 @@ submit.onclick = function() {
     question1.classList.add("col-12");
     question1.classList.add("float-left");
 
-    response1.classList.add("col-8");
+    response1.classList.add("col-12");
+    response1.classList.add("col-md-8");
     response1.classList.add("float-left");
     response1.setAttribute("type", "text");
 
     sentense1.classList.add("text-color2");
-    sentense1.classList.add("col-4");
+    sentense1.classList.add("col-12");
+    sentense1.classList.add("col-md-4");
     sentense1.classList.add("float-left");
     sentense1.innerText = "The reason why is because I____.";
 
@@ -85,12 +107,14 @@ submit.onclick = function() {
     question2.classList.add("col-12");
     question2.classList.add("float-left");
 
-    response2.classList.add("col-8");
+    response2.classList.add("col-12");
+    response2.classList.add("col-md-8");
     response2.classList.add("float-left");
     response2.setAttribute("type", "text");
 
     sentense2.classList.add("text-color2");
-    sentense2.classList.add("col-4");
+    sentense2.classList.add("col-12");
+    sentense2.classList.add("col-md-4");
     sentense2.classList.add("float-left");
     sentense2.innerText = "I appreciate your kindness, and I think it's important to understand the reason about this conversation. The real reason why I really want this in my life is____.";
 
@@ -117,12 +141,14 @@ submit.onclick = function() {
     question3.classList.add("col-12");
     question3.classList.add("float-left");
 
-    response3.classList.add("col-8");
+    response3.classList.add("col-12");
+    response3.classList.add("col-md-8");
     response3.classList.add("float-left");
     response3.setAttribute("type", "text");
 
     sentense3.classList.add("text-color2");
-    sentense3.classList.add("col-4");
+    sentense3.classList.add("col-12");
+    sentense3.classList.add("col-md-4");
     sentense3.classList.add("float-left");
     sentense3.innerText = "Well, It's not easy to put forward my feelings, It's hard! However, I must do it to realise the person i need to be in my life. The reason why is because I____.";
 
@@ -149,12 +175,14 @@ submit.onclick = function() {
     question4.classList.add("col-12");
     question4.classList.add("float-left");
 
-    response4.classList.add("col-8");
+    response4.classList.add("col-12");
+    response4.classList.add("col-md-8");
     response4.classList.add("float-left");
     response4.setAttribute("type", "text");
 
     sentense4.classList.add("text-color2");
-    sentense4.classList.add("col-4");
+    sentense4.classList.add("col-12");
+    sentense4.classList.add("col-md-4");
     sentense4.classList.add("float-left");
     sentense4.innerText = "I____.";
 
@@ -180,12 +208,14 @@ submit.onclick = function() {
     question5.classList.add("col-12");
     question5.classList.add("float-left");
 
-    response5.classList.add("col-8");
+    response5.classList.add("col-12");
+    response5.classList.add("col-md-8");
     response5.classList.add("float-left");
     response5.setAttribute("type", "text");
 
     sentense5.classList.add("text-color2");
-    sentense5.classList.add("col-4");
+    sentense5.classList.add("col-12");
+    sentense5.classList.add("col-md-4");
     sentense5.classList.add("float-left");
     sentense5.innerText = "No, That's not it. I_____.";
 
@@ -212,12 +242,14 @@ submit.onclick = function() {
     question6.classList.add("col-12");
     question6.classList.add("float-left");
 
-    response6.classList.add("col-8");
+    response6.classList.add("col-12");
+    response6.classList.add("col-md-8");
     response6.classList.add("float-left");
     response6.setAttribute("type", "text");
 
     sentense6.classList.add("text-color2");
-    sentense6.classList.add("col-4");
+    sentense6.classList.add("col-12");
+    sentense6.classList.add("col-md-4");
     sentense6.classList.add("float-left");
     sentense6.innerText = "Because I____.";
 
@@ -244,7 +276,8 @@ submit.onclick = function() {
   if (i > 8) {
     var name = document.createElement("INPUT");
     name.id = "name";
-    name.classList.add("col-8");
+    name.classList.add("col-12");
+    name.classList.add("col-md-8");
     name.classList.add("float-left");
     name.setAttribute("type", "text");
     document.getElementById("input-response").appendChild(name);
@@ -267,9 +300,11 @@ submit.onclick = function() {
     document.getElementById("final").remove();
     i = 0;
   }
+}
 };
 
 clear.onclick = function() {
+  if(j!=0){
   if (i == 0) {
     return;
   }
@@ -440,4 +475,5 @@ clear.onclick = function() {
     document.getElementById("final").remove();
     i = 0;
   }
+}
 };

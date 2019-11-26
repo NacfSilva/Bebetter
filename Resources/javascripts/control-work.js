@@ -1,6 +1,24 @@
 var submit = document.getElementById("submit");
 var clear = document.getElementById("clear");
+var continue1 = document.getElementById("Continue");
 var i = 0;
+var j =0;
+
+continue1.onclick = function(){
+  if (j == 0){
+    j++
+    var hide1 = document.getElementById("hide");
+    var hide3 = document.getElementById("instrution");
+
+    clear.classList.remove("hidden");
+    submit.classList.remove("hidden");
+    hide1.classList.remove("hidden");
+
+    hide1.classList.add("show");
+    hide3.classList.add("hidden");
+
+  }
+};
 
 submit.onclick = function() {
   i++;
