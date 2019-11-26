@@ -237,6 +237,9 @@ footer1 {
   .work {
     left: 42.5%;
   }
+  .text-dropdown{
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -246,7 +249,7 @@ footer1 {
   .imgshake {
     left: 45%;
   }
-  .dropdown-menu{
+  .text-dropdown{
     font-size: 0.45em;
   }
   .NunoSilva{
