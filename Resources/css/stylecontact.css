@@ -246,4 +246,15 @@ footer1 {
   .imgshake {
     left: 45%;
   }
+  .dropdown-menu{
+    font-size: 0.45em;
+  }
+  .NunoSilva{
+    font-size: 10px;
+  }
+  .text-dark {
+
+    font-size: 10px;
+  
+  }
 }
