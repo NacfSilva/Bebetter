@@ -1,0 +1,657 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/stylesolve.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./Resources/images/favicon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be Better</title>
+  </head>
+
+  <body
+    class="d-flex flex-column"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="50"
+  >
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-color1 border-bottom border-dark w-100 large"
+    >
+    <div class="d-flex flex-row justify-content-center align-items-center" >
+      <a class="navbar-brand ml-3 " href="http://www.be-tter.me">
+        <img
+          class="navbar-brand ml-3 logo img-fluid"
+          src="./Resources/images/Logo - Better.png"
+        />
+</a>
+
+<div class="dropdown align-baseline" style="margin-top: 10%;" >
+  <button class="btn-sm  border-dark dropdown-toggle text-dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      How Can I Be Better?
+  </button>
+  <div class="dropdown-menu text-dropdown" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" onclick="location.href='http://www.be-tter.me/successful';" type="button">Find Purpose</button>
+    <button class="dropdown-item" onclick="location.href='http://www.be-tter.me/solve';" type="button">Solve a Problem</button>
+    <button class="dropdown-item" onclick="location.href='http://www.be-tter.me/work';" type="button">Enjoy Your Work</button>
+  </div>
+</div>
+</div>
+    </nav>
+
+
+    <section id="Solve"></section>
+    <section class="d-flex justify-content-center py-4 bg-color4">
+      <div class=" col-xs-12 col-sm-10 col-md-8 card bg-color3">
+          <div id="instrution">
+              <div  class="mt-3">
+                <label class="col-12 " for="name">Are you struggling with a problem that you can't find a way to overcome? Think about that while you are solving this quiz.
+                  </label>
+              </div>
+              <div class="m-3" >
+                  <button class="btn btn-success bg-green float-right " id="Continue">Continue</i></button>
+                </div>
+              </div>
+
+        <div id="hide" class="hidden m-3">
+        <div id="question" >
+          <h5 class="col-12 " for="name"> 
+              Do you feel responsible for what happened?
+          </h5>
+        </div>
+       
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                No
+            </label>
+          </div>
+            <h5 class="float-right bg-color2 p-2 m-3">1 / 29</h5>
+      </div>
+
+      <div id="hide1" class="hidden m-3">
+        <div id="why1">
+          <h5 class="col-12 " for="name">
+            Have you play any part in creating this problem?
+          </h5>
+        </div>
+        <div id="ah1">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios3">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option2">
+                <label class="form-check-label" for="exampleRadios4">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">2 / 29</h5>
+      </div>
+      <div id="hide2" class="hidden m-3">
+        <div id="why2">
+            <h5 class="col-12 " for="name">
+                Do you think you are having any behavior that it's turning things worse?
+                </h5>
+        </div>
+        <div id="ah2">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios5" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios5">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios6" value="option2">
+                <label class="form-check-label" for="exampleRadios6">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">3 / 29</h5>
+      </div>
+        <div id="hide3" class="hidden m-3">
+        <div id="why3">
+            <h5 class="col-12 " for="name">
+                Does a part of you want to hold onto the problem, maybe because it feels familiar or because there’s some pay off in keeping things as they are? 
+                </h5>
+        </div>
+        <div id="ah3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios7" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios7">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios8" value="option2">
+                <label class="form-check-label" for="exampleRadios8">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">4 / 29</h5>
+      </div>
+        <div id="hide4" class="hidden m-3">
+        <div id="why4">
+            <h5 class="col-12 " for="name">
+                Are you waiting for someone else to step in and fix things for you?
+                </h5>
+        </div>
+        <div id="ah4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios9" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios9">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios10" value="option2">
+                <label class="form-check-label" for="exampleRadios10">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">5 / 29</h5>
+      </div>
+        <div id="hide5" class="hidden m-3">
+        <div id="why5">
+            <h5 class="col-12 " for="name">
+                Are you blaming someone else in a way that limits your actions?
+                </h5>
+        </div>
+        <div id="ah5">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios11" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios11">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios12" value="option2">
+                <label class="form-check-label" for="exampleRadios12">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">6 / 29</h5>
+      </div>
+        <div id="hide6" class="hidden m-3">
+        <div id="why6">
+            <h5 class="col-12 " for="name">
+                Was this the worst thing that ever happened to you?
+                </h5>
+        </div>
+        <div id="ah6">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios13" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios13">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios14" value="option2">
+                <label class="form-check-label" for="exampleRadios14">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">7 / 29</h5>
+      </div>
+        <div id="hide7" class="hidden m-3">
+        <div id="why7">
+            <h5 class="col-12 " for="name">
+                On a scale of one to ten—ten being the biggest hardship you’ve ever faced in your life—where does this problem fall?
+                </h5>
+        </div>
+        <div id="ah7">
+                <select class="form-control col-2" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">8 / 29</h5>
+      </div>
+        <div id="hide8" class="hidden m-3">
+        <div id="why8">
+            <h5 class="col-12 " for="name">
+                Will this issue be relevant to you in one year? One month? One week? 
+                </h5>
+        </div>
+        <div id="ah8">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios15" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios15">
+                    Yes, in one year
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios16" value="option2">
+                <label class="form-check-label" for="exampleRadios16">
+                    No, in one year
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios17" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios17">
+                      Yes, in one month
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios18" value="option2">
+                  <label class="form-check-label" for="exampleRadios18">
+                      No, in one month
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios19" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios19">
+                        Yes, in one week
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios20" value="option2">
+                    <label class="form-check-label" for="exampleRadios20">
+                        No, in one week
+                    </label>
+                  </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">9 / 29</h5>
+      </div>
+        <div id="hide9" class="hidden m-3">
+        <div id="why9">
+            <h5 class="col-12 " for="name">
+                Think about the major areas of your life—work, family, and hobbies, for example. How many areas does this one problem impacts?
+            </h5>
+        </div>
+        <div id="ah9">
+            <input  class="form-control" id="exampleFormControlInput1" >
+      </div>
+      <h5 class="float-right bg-color2 p-2 m-3">10 / 29</h5>
+      </div>
+        <div id="hide10" class="hidden m-3">
+        <div id="why10">
+            <h5 class="col-12 " for="name">
+                How much of your stress comes from the problem itself, and how much of it has to do with how (and how often) you’re thinking about it?
+
+                </h5>
+        </div>
+        <div id="ah10">
+            <input  class="form-control" id="exampleFormControlInput2" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">11 / 29</h5>
+      </div>
+        <div id="hide11" class="hidden m-3">
+        <div id="why11">
+            <h5 class="col-12 " for="name">
+                If the worst that could possibly happen happened, could you get through it, and maybe even benefit in some way?
+                </h5>
+        </div>
+        <div id="ah11">
+            <input  class="form-control" id="exampleFormControlInput3" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">12 / 29</h5>
+      </div>
+        <div id="hide12" class="hidden m-3">
+        <div id="why12">
+            <h5 class="col-12 " for="name">
+                Are you struggling to control your emotions about this problem?
+                </h5>
+        </div>
+        <div id="ah12">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios21" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios22" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">13 / 29</h5>
+      </div>
+        <div id="hide13" class="hidden m-3">
+        <div id="why13">
+            <h5 class="col-12 " for="name">
+                If you’re getting caught up in “what if” scenarios, can you remember other times when you imagined all the horrible things that could happened and none of them did?
+                </h5>
+        </div>
+        <div id="ah13">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios11" id="exampleRadios23" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios11" id="exampleRadios24" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">14 / 29</h5>
+      </div>
+        <div id="hide14" class="hidden m-3">
+        <div id="why14">
+            <h5 class="col-12 " for="name">
+                If you’re feeling overwhelmed, can you break the problem into smaller, more manageable parts?
+
+                </h5>
+        </div>
+        <div id="ah14">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios12" id="exampleRadios25" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios12" id="exampleRadios26" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">15 / 29</h5>
+      </div>
+        <div id="hide15" class="hidden m-3">
+        <div id="why15">
+            <h5 class="col-12 " for="name">
+                If you’re feeling defeated, can you see this as a test of your strength and impress yourself by rising to the occasion?
+                </h5>
+        </div>
+        <div id="ah15">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios13" id="exampleRadios27" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios13" id="exampleRadios28" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">16 / 29</h5>
+      </div>
+        <div id="hide16" class="hidden m-3">
+        <div id="why16">
+            <h5 class="col-12 " for="name">
+                If you’re feeling guilty, can you express your remorse and begin forgiving yourself—and if not, what would it take to do that? 
+                </h5>
+        </div>
+        <div id="ah16">
+            <input  class="form-control" id="exampleFormControlInput4" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">17 / 29</h5>
+      </div>
+        <div id="hide17" class="hidden m-3">
+        <div id="why17">
+            <h5 class="col-12 " for="name">
+                Can you make some time for deep breathing, meditation, or yoga to create some mental stillness? 
+                </h5>
+        </div>
+        <div id="ah17">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios14" id="exampleRadios29" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios14" id="exampleRadios30" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">18 / 29</h5>
+      </div>
+        <div id="hide18" class="hidden m-3">
+        <div id="why18">
+            <h5 class="col-12 " for="name">
+                Do you feel that you can surpass this problem?
+                </h5>
+        </div>
+        <div id="ah18">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios15" id="exampleRadios31" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios15" id="exampleRadios32" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">19 / 29</h5>
+      </div>
+        <div id="hide19" class="hidden m-3">
+        <div id="why19">
+            <h5 class="col-12 " for="name">
+                Have you successfully addressed similar solve in the past?
+
+                </h5>
+        </div>
+        <div id="ah19">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios16" id="exampleRadios33" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios16" id="exampleRadios34" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">20 / 29</h5>
+      </div>
+        <div id="hide20" class="hidden m-3">
+        <div id="why20">
+            <h5 class="col-12 " for="name">
+                Have other people overcome similar challenges, can you learn anything about what they did? 
+
+            </h5>
+        </div>
+        <div id="ah20">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios17" id="exampleRadios35" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios17" id="exampleRadios36" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">21 / 29</h5>
+      </div>
+        <div id="hide21" class="hidden m-3">
+        <div id="why21">
+            <h5 class="col-12 " for="name">
+                If a friend comes to you with this problem, would you reassure that person that he or she could get past this, and how would you envision that happening?
+            </h5>
+        </div>
+        <div id="ah21">
+            <input  class="form-control" id="exampleFormControlInput5" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">22 / 29</h5>
+      </div>
+        <div id="hide22" class="hidden m-3">
+        <div id="why22">
+            <h5 class="col-12 " for="name">
+                Could you do this if you had help? Who can you ask for help? 
+                </h5>
+        </div>
+        <div id="ah22">
+           <input  class="form-control" id="exampleFormControlInput6" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">23 / 29</h5>
+      </div>
+        <div id="hide23" class="hidden m-3">
+        <div id="why23">
+            <h5 class="col-12 " for="name">
+                Can you visualize yourself getting through this (realistically, not through magical thinking)? If you can visualize it, you can do it!
+                </h5>
+        </div>
+        <div id="ah23">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios18" id="exampleRadios37" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios18" id="exampleRadios38" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+              </div>
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">24 / 29</h5>
+      </div>
+        <div id="hide24" class="hidden m-3">
+        <div id="why24">
+            <h5 class="col-12 " for="name">
+                If you accepted your fear and acted in spite of it, what would that entail?
+                </h5>
+        </div>
+        <div id="ah24">
+            <input  class="form-control" id="exampleFormControlInput7" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">25 / 29</h5>
+      </div>
+        <div id="hide25" class="hidden m-3">
+        <div id="why25">
+            <h5 class="col-12 " for="name">
+                When you create stillness and listen to your gut instinct, what do you learn?  
+                </h5>
+        </div>
+        <div id="ah25">
+            <input  class="form-control" id="exampleFormControlInput8" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">26 / 29</h5>
+      </div>
+        <div id="hide26" class="hidden m-3">
+        <div id="why26">
+            <h5 class="col-12 " for="name">
+                What are your three strongest coping skills (creativity, strength, and resourcefulness, for example), and how can use them in this situation?
+                </h5>
+        </div>
+        <div id="ah26">
+            <input  class="form-control" id="exampleFormControlInput9" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">27 / 29</h5>
+      </div>
+        <div id="hide27" class="hidden m-3">
+        <div id="why27">
+            <h5 class="col-12 " for="name">
+                If other people have given you advice, what part of it resonates with you and why?  
+                </h5>
+        </div>
+        <div id="ah27">
+            <input  class="form-control" id="exampleFormControlInput10" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">28 / 29</h5>
+      </div>
+        <div id="hide28" class="hidden m-3">
+        <div id="why28">
+            <h5 class="col-12 " for="name">
+                If you stopped making excuses and started taking action, what’s the first thing you would do? 
+                </h5>
+        </div>
+        <div id="ah28">
+            <input  class="form-control" id="exampleFormControlInput11" >
+        </div>
+        <h5 class="float-right bg-color2 p-2 m-3">29 / 29</h5>
+      </div>
+       
+      <div class="m-3">
+        <button class="btn btn-success bg-green float-right hidden" id="submit"><i class="fas fa-arrow-circle-right fa-lg"></i></button>
+        <button class="btn btn-danger bg-red float-right mr-2 hidden" id="clear"  ><i class="fas fa-trash-alt"></i></button>
+      </div>
+      </div>
+    </section>
+
+
+    <footer class=" container">
+        <div class="text-center   text-dark border-top border-grey mb-1 pt-2">
+            <div class="  d-flex flex-row justify-content-center align-items-center " >
+                <div class=" text-dark float-left ">
+                  Design by
+                  <a href="mailto: nacf.silva@gmail.com" class="NunoSilva">NunoSilva</a>
+                  &copy; 2019
+                </div>
+                <nav  class="navbar navbar-expand-lg  text-dark  float-left ">
+                <li class="nav-link" ><a class="text-grey" href="http://www.be-tter.me/About">About</a></li>
+                <li class="nav-link" ><a class="text-grey" href="http://www.be-tter.me/Contact">Contact</a></li>
+              </nav> 
+            </div>
+        </div>
+      </footer>
+
+
+      <script src="Resources/javascripts/control-solve.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
